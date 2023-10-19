@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body{
+ background: #0D1117;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  background: rgb(36, 46, 133);
+  padding: 0.5rem;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: rgb(170, 158, 142);
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error img {
+  margin-top: 2rem;
+}
+.wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.wrapper h2 {
+  color: red;
+}
+.loader {
+  margin: 1rem;
+}
+
+.loader img {
+  width: 60%;
+}
+.pagin {
+  align-items: center;
+  text-align: center;
+}
+.pagin button {
+  margin: 1.5rem 1px 1.5rem 1px;
+  width: 4rem;
+  padding: 15px;
+  background-color: rgb(24, 30, 90);
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid rgb(51, 64, 182);
+}
+.pagin button:hover {
+  background-color: rgb(31, 36, 94);
+  font-size: 20px;
+}
+
+.data {
+  display: flex;
+}
+
+.data img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border: 5px solid rgb(16, 32, 54);
+  border-radius: 1rem;
+}
+
+.data-info {
+  padding: 0 0 1rem 3rem;
+}
+
+.data-info p {
+  line-height: 1.5rem;
+}
+
+/* Home Page */
+.home-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home--image {
+  width: 50%;
+  height: auto;
+  margin-left: 1rem;
+  border-radius: 10px;
+  margin: 1em 0;
+}
+.home--title {
+  background-color: rgb(23, 31, 104);
+}
+.home-details {
+  background-color: rgb(23, 31, 104);
+}
+
+/* Card  and SingleRepo styles*/
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5em;
+}
+
+.home-cont {
+  background: rgb(36, 46, 133);
+  width: 60%;
+  border-radius: 5px;
+  border: 2px solid rgb(51, 64, 182);
+  box-shadow: 10px 20px 25px 10px;
+  padding: 0.5rem;
+}
+
+.home-cont-div {
+  line-height: 2em;
+  color: rgb(170, 155, 155);
+  word-wrap: break-word;
+}
+
+.home-cont-div p {
+  margin-left: 1rem;
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
+.home--header {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.home-cont h1,
+h3 {
+  background: transparent;
+  font-size: x-large;
+  color: rgb(209, 197, 181);
+}
+
+.date {
+  margin-bottom: 0.5em;
+}
+
+.repo--link {
+  color: rgb(119, 103, 103);
+}
+.span {
+  color: rgb(209, 197, 181);
+  font-size: 0.8em;
+  margin-right: 0.4em;
+}
+
+.title {
+  font-size: 30px;
+  color: rgb(88, 83, 76);
+  margin-bottom: 0.4em;
+  text-align: center;
+}
+.pages {
+  color: rgb(88, 83, 76);
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+
+.btn {
+  text-decoration: none;
+  margin: 4px;
+  color: antiquewhite;
+  text-decoration: none;
+  border: 2px solid rgb(51, 64, 182);
+  background: #1976d2;
+  padding: 3px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: rgb(20, 23, 53);
+  transition: 1s;
+}
+
+.error-btn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 18px;
+}
+.error-header {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.error-boundary {
+  margin: 4rem 0;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+}
+.reload {
+  margin: 1rem;
+}
+
+.reload-p{
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .home-cont-div p {
+    font-size: 1em;
+  }
+  .home-cont h1,
+  h3 {
+    font-size: 18px;
+  }
+  .pagin button {
+    margin: 1.5rem 1px 1.5rem 1px;
+    width: 3rem;
+    padding: 12px;
+    background-color: rgb(24, 30, 90);
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid rgb(51, 64, 182);
+  }
+  .pagin button:hover {
+    background-color: rgb(31, 36, 94);
+    font-size: 18px;
+  }
+}
