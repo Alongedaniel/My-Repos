@@ -20,7 +20,6 @@ function App() {
   return (
     <div>
       <Router>
-        <main>
           <ThemeProvider theme={theme}>
             <ErrorBoundary>
               <CssBaseline />
@@ -68,7 +67,6 @@ function App() {
               </Routes>
             </ErrorBoundary>
           </ThemeProvider>
-        </main>
       </Router>
     </div>
   );

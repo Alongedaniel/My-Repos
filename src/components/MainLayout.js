@@ -53,11 +53,6 @@ const MainLayout = ({ children }) => {
   ];
   return (
     <Stack
-      width={"100%"}
-      overflowx="hidden"
-      height={"100dvh"}
-      bgcolor="#0D1117"
-      minWidth={"1436px"}
     >
       <Container maxWidth="xl" disableGutters sx={{ px: "60px", pt: "100px" }}>
         <Helmet>
